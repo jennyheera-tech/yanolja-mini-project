@@ -18,7 +18,6 @@
     top: 230px;
     left: 200px;
     text-align: left;
-
 }
 #visual h2 + strong {
     display: block;
@@ -76,6 +75,10 @@
     border-radius: 50%;
     transform: rotate(45deg);
     font-size: 20px;
+}
+
+.main .more i:hover {
+    opacity: 60%;
 }
 
 .main .con1 {
@@ -247,13 +250,13 @@
 }
 
 .wanted-wrap .wantedlist span {
-    color: var(--color-Medium-Gray, #8c8282);
+    color:  #8c8282;
     font-size: 16px;
     font-weight: 400;
 }
 .wanted-wrap .wantedlist .more {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 10px;
 }
 

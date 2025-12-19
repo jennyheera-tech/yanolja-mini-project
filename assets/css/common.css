@@ -43,26 +43,96 @@
 #header .nav .gnb li {
 }
 #header .nav .gnb li a {
+    color: #555055;
+    font-size: 20px;
+    font-weight: 600;
+}
+#header .nav .gnb li a:hover {
+    color: #F54B1E;
 }
 
 /* footer */
 #footer {
     height: 600px;
     background-color: #f5ebe1;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 }
 #footer .inner {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /* background-color: azure; */
+    position: relative;
+    height: 313px;
 }
 #footer .inner h2 {
+    position: absolute;
+    top: 0;
+    left: 0%;
 }
 #footer .menus {
     width: 1050px;
     height: 222px;
     /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-#footer .menus ul {}
+#footer .menus > ul {
+    display: flex;
+    justify-content: space-between;
+}
 
-#footer .menus .lititle {}
-#footer .menus .lititle a {}
-#footer .menus .lititle .lidata {}
-#footer .menus .lititle .lidata li {}
-#footer .menus .lititle .lidata li a {}
+#footer .menus .lititle {
+    /* li */
+}
+#footer .menus .lititle > a {
+    /* 메뉴타이틀 */
+    color: #555055;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#footer .menus .lititle .lidata {
+}
+#footer .menus .lititle .lidata li {
+    color: #8c8282;
+    font-size: 14px;
+    font-weight: 400;
+}
+#footer .menus .lititle .lidata .snsico {
+    display: flex;
+}
+#footer .menus .lititle .lidata li a {
+    /* 작은텍스트들 */
+    color: #8c8282;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+#footer .menus .lidata li a i {
+    /* 아이콘 */
+
+    font-size: 20px;
+    color: black;
+}
+#footer .etc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#footer .etc a {
+    color: #8c8282;
+    font-size: 16px;
+    font-weight: 600;
+}
+#footer .etc p {
+    color: #8c8282;
+    font-size: 12px;
+    font-weight: 400;
+}
