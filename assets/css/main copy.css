@@ -7,7 +7,6 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
-    
 }
 #visual h2 {
     font-size: 72px;
@@ -32,7 +31,6 @@
     position: absolute;
     top: 412px;
     left: 200px;
-
 }
 #visual p {
 }
@@ -119,6 +117,7 @@
 .main .news .newslist li {
     width: 600px;
     position: relative;
+    
 }
 
 .main .news .newslist img {
@@ -126,6 +125,7 @@
     display: block;
     vertical-align: top;
     margin-bottom: 30px;
+   
 }
 .main .news .newslist strong {
     color: #1e1928;
@@ -150,20 +150,25 @@
 /* 채용 */
 
 .main .careers {
-   
 }
 .main .careers h3 {
     font-size: 36px;
     font-weight: 600;
 }
-.main .careers .careerlist { display: flex; gap: 35px;
+.main .careers .careerlist {
+    display: flex;
+    gap: 35px;
 }
 .main .careers .careerlist .boss {
     position: relative;
     background-color: aquamarine;
     width: 600px;
     height: 830px;
+    
 }
+
+
+
 .main .careers .careerlist .boss img {
     width: 600px;
     height: 830px;
@@ -171,6 +176,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    
 }
 .main .careers .careerlist .boss h3 {
     color: white;
@@ -197,7 +203,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 .main .careers .careerlist .wanted-wrap .wantedlist {
     background-color: #f5ebe1;
@@ -207,6 +212,7 @@
     box-sizing: border-box;
     padding-left: 90px;
     padding-top: 50px;
+   
 }
 .main .careers .careerlist .wanted-wrap .wantedlist h3 {
     margin-bottom: 20px;
@@ -229,7 +235,7 @@
 }
 
 .wanted-wrap .wantedlist span {
-    color: var(--color-Medium-Gray, #8c8282);
+    color:  #8c8282;
     font-size: 16px;
     font-weight: 400;
 }
@@ -237,6 +243,10 @@
     position: absolute;
     top: 0;
     right: 10px;
+}
+
+.main .careers .careerlist .wanted-wrap .wantedlist:hover {
+    border: 1px solid #000;
 }
 
 .wanted-wrap .job {
@@ -254,11 +264,9 @@
     top: 63px;
     left: 90px;
     color: white;
-
 }
 .wanted-wrap .job .more {
     position: absolute;
-     top: 63px;
-     right: 90px;
-    
+    top: 63px;
+    right: 90px;
 }
