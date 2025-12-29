@@ -10,14 +10,14 @@ var swiper = new Swiper('.mySwiper', {
     },
 });
 
-//section1 스와이프
+//section1 사업소개 스와이프
 
- var swiper = new Swiper(".bsn-swiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+const bsnSwiper = new Swiper(".bsnSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+},
+});
 // gsap 스크립트 등

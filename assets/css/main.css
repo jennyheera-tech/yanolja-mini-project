@@ -1,4 +1,5 @@
 /* 메인 페이지 스타일 */
+/* 비주얼 부분 */
 #visual {
     height: 900px;
     background-repeat: no-repeat;
@@ -33,12 +34,12 @@
 #visual p {
 }
 
-.swiper {
+#visual .swiper {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+#visual .mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #444;
@@ -47,13 +48,14 @@
     align-items: center;
 }
 
-.swiper-slide img {
+#visual .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* 메인 */
 .main .con {
     /* width: 100%; */
 }
@@ -81,6 +83,7 @@
     opacity: 60%;
 }
 
+/* section1. 비즈니스소개 */
 .main .con1 {
 }
 .main .con1 .inner {
@@ -89,19 +92,41 @@
 }
 
 .con1 .bsnlist {
-    display: flex;
+    /* swiper-wrapper 역할 */
+    /* display: flex;
     gap: 20px;
-    overflow: hidden;
+    overflow: hidden; */
+}
+/* ===== 사업소개 Swiper ===== */
+.con1 .bsnSwiper {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+      padding-bottom: 60px; /* pagination 공간 확보 */
 }
 
+.con1 .bsnSwiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.con1 .bsnSwiper .swiper-slide {
+    width: 500px;
+    text-align: left;
+    display: block; /* flex 제거 */
+    
+}
+
+/* 카드 */
 .con1 .bsn {
     position: relative;
-}
-.con1 .bsn img {
     width: 500px;
     height: 640px;
+}
+
+.con1 .bsn img {
+    width: 100%;
+    height: 100%;
     display: block;
-    vertical-align: top;
 }
 
 .con1 .bsn .bsntxt {
@@ -127,6 +152,14 @@
     max-width: 300px;
 }
 
+.con1 .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* section2. 최신뉴스 */
 .main .news {
     background-color: #f5ebe1;
 }
@@ -169,7 +202,7 @@
     display: block;
 }
 
-/* 채용 */
+/* section3. 채용 */
 
 .main .careers {
 }
@@ -191,11 +224,10 @@
 
 .main .careers .careerlist .boss:hover {
     cursor: pointer;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s, transform 0.3s;
-  transform: scale(1.05);
-  border-radius: 30px;
-  
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    transform: scale(1.05);
+    border-radius: 30px;
 }
 .main .careers .careerlist .boss img {
     width: 600px;
@@ -242,11 +274,11 @@
     padding-top: 50px;
 }
 .main .careers .careerlist .wanted-wrap .wantedlist:hover {
-        cursor: pointer;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s, transform 0.3s;
-  transform: scale(1.05);
-  border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    transform: scale(1.05);
+    border-radius: 30px;
 }
 .main .careers .careerlist .wanted-wrap .wantedlist h3 {
     margin-bottom: 20px;
@@ -285,11 +317,11 @@
     position: relative;
 }
 .wanted-wrap .job:hover {
-        cursor: pointer;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s, transform 0.3s;
-  transform: scale(1.05);
-  border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    transform: scale(1.05);
+    border-radius: 30px;
 }
 .wanted-wrap .job img {
     position: absolute;
